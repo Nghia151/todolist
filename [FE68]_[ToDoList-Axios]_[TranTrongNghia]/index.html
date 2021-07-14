@@ -41,6 +41,7 @@
             </button>
           </div>
           <div id="notiInput" class="alert-danger" style="display: none"></div>
+          <div class="loader" id="loader" style="display: none;"></div>
           <div class="card__todo">
             <!-- Uncompleted tasks -->
             <ul class="todo" id="todo"></ul>
@@ -50,13 +51,12 @@
         </div>
       </div>
     </div>
-
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    
     
 
     <script>
@@ -70,10 +70,11 @@
         });
       });
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <script src="./js/Task.js"></script>
-    <script src="./js/ListTask.js"></script>
+    <script src="./js/TaskService.js"></script>
     <script src="./js/Validator.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
-

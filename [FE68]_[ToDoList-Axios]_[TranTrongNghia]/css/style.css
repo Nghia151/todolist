@@ -64,7 +64,25 @@ body {
 .card__title p {
   font-size: 0.8rem;
 }
+.loader {
+  border: 5px solid #6e6d6d;
+  border-radius: 50%;
+  border-top: 5px solid pink;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  
+  
+  
+  animation: spin 2s linear infinite;
+}
 
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 /* Filler Button */
 .filter-btn {
   position: absolute;
